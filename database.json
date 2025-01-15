@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": "44d1",
+      "title": "work",
+      "discription": "hard work",
+      "advice": "do hard work"
+    },
+    {
+      "id": "38cb",
+      "title": "working with new project",
+      "description": "hard work with smart skills give you successful life"
+    },
+    {
+      "id": "1e63",
+      "name": "simran",
+      "occupation": "developer"
+    }
+  ],
+  "users": [
+    {
+      "id": "abf7",
+      "name": "simranjit kaur ",
+      "occupation": "website developer"
+    }
+  ]
+}
