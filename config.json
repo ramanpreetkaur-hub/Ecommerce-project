@@ -1,0 +1,157 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Grocery",
+        "products": [
+          {
+            "id": 1,
+            "name": "Organic Apples",
+            "description": "Fresh organic apples, 1kg.",
+            "price": 3.99,
+            "stock": 100,
+            "image": "https://cdn.britannica.com/22/187222-050-07B17FB6/apples-on-a-tree-branch.jpg"
+          },
+          {
+            "id": 2,
+            "name": "Whole Wheat Bread",
+            "description": "Healthy whole wheat bread loaf.",
+            "price": 2.49,
+            "stock": 50,
+            "image": "https://s7d6.scene7.com/is/image/bjs/26760"
+          },
+          {
+            "id": 3,
+            "name": "Soyabean Seeds",
+            "description": "Healthy Soyabean",
+            "price": 2.49,
+            "stock": 50,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYaiT-USvdclmPYZbYale-EsbnyY3ylborg&s"
+          },
+          {
+            "id": 4,
+            "name": "Dry Nuts",
+            "description": "Healthy Nuts.",
+            "price": 2.49,
+            "stock": 50,
+            "image": "https://img.freepik.com/free-vector/nuts-assortment-creative-promo-posters-set-vector_529539-221.jpg?t=st=1737356244~exp=1737359844~hmac=aa83d3dbd3c7073e0205a6509c57f1ed24a90751a3395ff883032cd4ec9db53b&w=1380"
+          }
+         
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Fashion",
+        "products": [
+          {
+            "id": 7,
+            "name": "Men's T-Shirt",
+            "description": "Casual cotton t-shirt for men.",
+            "price": 15.99,
+            "stock": 30,
+            "image": "https://i.pinimg.com/736x/1e/1f/ba/1e1fbadb1bdba9efd097d701ac2fd644.jpg"
+          },
+          {
+            "id": 8,
+            "name": "Women's Handbag",
+            "description": "Stylish leather handbag.",
+            "price": 49.99,
+            "stock": 20,
+            "image": "https://i.pinimg.com/736x/48/30/aa/4830aa934a2472154e1dbb29660e0671.jpg"
+          },
+          {
+            "id": 9,
+            "name": "necklace",
+            "description": "Stylish fancy necklace.",
+            "price": 49.99,
+            "stock": 20,
+            "image": "https://arzonai.com/cdn/shop/products/O1CN01WmDDc11yjijrgCoDu__2210137026615-0-cib.jpg?v=1671828318"
+          },
+          {
+            "id": 10,
+            "name": "Watch",
+            "description": "Stylish Watch.",
+            "price": 49.99,
+            "stock": 20,
+            "image": "https://i0.wp.com/poedagar.store/wp-content/uploads/2022/03/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210529180922-1.jpg?fit=800%2C800&ssl=1"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Electronics",
+        "products": [
+          {
+            "id": 12,
+            "name": "Smartphone",
+            "description": "Latest model smartphone with advanced features.",
+            "price": 699.99,
+            "stock": 15,
+            "image": "https://www.honor.com/content/dam/honor/ae-en/blog/2024/5-things-a-smartphone-can-do/imgs-01.jpg"
+          },
+          {
+            "id":13 ,
+            "name": "Bluetooth Speaker",
+            "description": "Portable Bluetooth speaker with great sound quality.",
+            "price": 39.99,
+            "stock": 25,
+            "image": "https://m.media-amazon.com/images/I/81wdmgabXFL.jpg"
+          },
+          {
+            "id": 14,
+            "name": "boat earphones",
+            "description": "Portable Bluetooth earphones with great sound quality.",
+            "price": 39.99,
+            "stock": 25,
+            "image": "https://www.boat-lifestyle.com/cdn/shop/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_76178e65-cec1-436c-87e2-f834b18ffd42_600x.png?v=1658824214"
+          },
+          {
+            "id": 15,
+            "name": "Laptop",
+            "description": "Laptop with great sound quality.",
+            "price": 50.99,
+            "stock": 25,
+            "image": "https://m.media-amazon.com/images/I/61lYDihIxqL.jpg"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Home Living",
+        "products": [
+          {
+            "id": 17,
+            "name": "Table Lamp",
+            "description": "Modern table lamp with LED light.",
+            "price": 24.99,
+            "stock": 40,
+            "image": "https://img.freepik.com/free-photo/light-lamp_74190-1485.jpg?t=st=1737359142~exp=1737362742~hmac=4bfa3cd99dececfbd5586da5a27088cbd6e234fd28cc48e2a28b48f173bd9114&w=996"
+          },
+          {
+            "id": 19,
+            "name": "Cushion Set",
+            "description": "Set of 4 comfortable cushions.",
+            "price": 29.99,
+            "stock": 35,
+            "image": "https://img.freepik.com/free-photo/pillow-sofa_1203-2717.jpg?t=st=1737359042~exp=1737362642~hmac=9fb59ed21c51b252f5304bed5a8db72b1c746c6d3e9187d849348553194d3c10&w=996"
+          },
+          {
+            "id": 20,
+            "name": "sofa set",
+            "description": "Set of 4 comfortable cushions.",
+            "price": 50.99,
+            "stock": 30,
+            "image": "https://img.freepik.com/free-photo/blue-sofa_1194-6649.jpg?t=st=1737358985~exp=1737362585~hmac=f0c277cee37a405bf1cca8fa00e931651c3569a167151db8261e3f2100bfaeac&w=900"
+          },
+          {
+            "id": 21,
+            "name": "arm chair",
+            "description": "Set of 4 comfortable cushions.",
+            "price": 30.99,
+            "stock": 50,
+            "image": "https://img.freepik.com/free-photo/old-wooden-armchair_1194-1167.jpg?uid=R157552574&ga=GA1.1.1494023551.1721709344&semt=ais_hybrid"
+          }
+        ]
+      }
+    ]
+  }

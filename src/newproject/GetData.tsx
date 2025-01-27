@@ -1,34 +1,68 @@
-import React, { useState } from "react";
-import { UseGrocery } from "./Customhook";
-// import EcommerceBody from "./EcommerceBody";
-// import EcommerceNav from "./EcommerceNav";
 
-// const GetData = () => {
-//   const [searchTerm, setSearchTerm] = useState(""); 
-//   const { groceryData, loading, error } = UseGrocery(searchTerm); 
+import { useEffect, useState, } from "react";
+import { Pagination } from 'antd';
+import Fashion from "./Fashion";
+import Electronics from "./Electronics";
+import Grocery from "./Grocery";
+import HomeLiving from "./HomeLiving";
+ import MyEcommerce from "./MyEcommerce"
+const GetData = () =>   {
+ 
 
-//   const handleSearch = (event: { target: { value: React.SetStateAction<string>; }; }) => {
-//     setSearchTerm(event.target.value); 
-//   };
-
-  // return (
-    // <div>
-    //   <EcommerceNav searchTerm={searchTerm} handleSearch={handleSearch} />
-      
-    //   {loading && <p>Loading...</p>} 
-    //   {error && <p style={{ color: "red" }}>Error: {error}</p>}
-      
-    //   {Array.isArray(groceryData) && groceryData.length > 0 ? (
-    //     groceryData.map((grocery, index) => (
-    //       <EcommerceBody key={index} grocery={grocery} />
-    //     ))
-    //   ) : (
-    //     <p>No products found</p>
-    //   )}
-    // </div>
+  const [categories, setCategories] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 1; 
    
-//   );
-// };
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedCategories = categories.slice(startIndex, startIndex + itemsPerPage);
 
-// export default GetData;
+  // Fetch data from config.json
+  useEffect(() => {
+    fetch("/config.json")
+      .then((response) => response.json())
+      .then((data) => setCategories(data.categories))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+  
+    return (
+      <div>
+       
+      <MyEcommerce/>
+      {paginatedCategories.map((category) => {
+        switch (category.name) {
+          case "Fashion":
+            return <Fashion key={category.name} categories={categories} />;
+          case "Electronics":
+            return <Electronics key={category.name} categories={categories} />;
+          case "Grocery":
+            return <Grocery key={category.name} categories={categories} />;
+          case "HomeLiving":
+            return <HomeLiving key={category.name} categories={categories} />;
+          default:
+            return null;
+        }
+      })}
+ 
+
+      
+        <div className="flex justify-center mt-8">
+          <Pagination
+            current={currentPage}
+            pageSize={itemsPerPage}
+            total={categories.length}
+            onChange={(page) => setCurrentPage(page)}
+            
+          />
+              
+        </div>
+      </div>
+
+  
+  );
+};
+
+export default GetData;
+
+
+
 

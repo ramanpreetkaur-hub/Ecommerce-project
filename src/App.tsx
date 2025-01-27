@@ -11,7 +11,7 @@ import UseEffectHook from "./concept/UseEffectHook";
 // import Layout from './concept/Layout';
 
 import Navbar from "./concept/MyLayout/Navbar";
-import ImageSlider from "./concept/ImageSlider"; // Importing the ImageSlider component
+import ImageSlider from "./concept/ImageSlider"; 
 import Footer from "./concept/MyLayout/Footer";
 import MyLayout from "./concept/MyLayout/MyLayout";
 import CenterBody from "./pages/CenterBody";
@@ -34,6 +34,14 @@ import JikanUI from "./pages/JikanUI";
 import Ant from "./newconcept/Ant";
 import Ecommerce from "./newproject/Ecommerce";
 import EcommerceBody from "./newproject/EcommerceBody";
+import Grocery from "./newproject/Grocery";
+import Fashion from "./newproject/Fashion";
+import HomeLiving from "./newproject/HomeLiving";
+import Electronics from "./newproject/Electronics";
+import Carousel from "./newproject/Carousel";
+import Home from "./newproject/Home";
+import Products from "./newproject/Products";
+import Webservice from "./newproject/Webservice";
 
 // const App = () => {
 //   return (
@@ -66,13 +74,47 @@ const router = createBrowserRouter([
     element: < JikanUI  />,
   },
   {
-   
     element: < Ecommerce  />,
     children:[
       {
       path:"/home-page2",
       element:<EcommerceBody/>
+
       },
+      {
+       path:"/grocery",
+       element:<Grocery />
+      },
+      {
+        path:"/fashion",
+        element:<Fashion />
+       },
+       {
+        path:"/home-living",
+        element:<HomeLiving />
+       },
+       {
+        path:"/electronics",
+        element:<Electronics />
+       },
+     
+       
+       {
+        path:"/Carousel",
+        element:<Carousel />
+       },
+       {
+        path:"/Home",
+        element:<Home />
+       },
+       {
+        path:"/products",
+        element:<Products/>
+       },
+       {
+        path:"/services",
+        element:<Webservice/>
+       },
     ]
   },
   
